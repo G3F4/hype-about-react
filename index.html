@@ -80,6 +80,21 @@
 
 	<!-- SLIDE#4 -->
 	<section class="slide">
+		<pre>
+			<code>class App extends Component {</code>
+			<code>  render() {</code>
+			<code>    return (</code>
+			<code>    &lt;div className="App"&gt;</code>
+			<code>      &lt;Sidebar /&gt;</code>
+			<code>      &lt;Invitations /&gt;</code>
+			<code>    &lt;/div&gt;</code>
+			<code>  )</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<!-- SLIDE#5 -->
+	<section class="slide">
 		<h2>Components & JSX</h2>
 		<ul>
 			<li class="next">DRY code</li>
@@ -93,13 +108,28 @@
 		</ul>
 	</section>
 
-	<!-- SLIDE#5 -->
+	<!-- SLIDE#6 -->
+	<section class="slide">
+		<pre>
+			<code>class App extends Component {</code>
+			<code>  componentWillMount() {...}</code>
+			<code>  componentDidMount() {...}</code>
+			<code>  componentWillReceiveProps(nextProps) {...}</code>
+			<code>  shouldComponentUpdate(nextProps, nextState) {...}</code>
+			<code>  componentWillUpdate(nextProps, nextState) {...}</code>
+			<code>  componentDidUpdate(prevProps, prevState) {...}</code>
+			<code>  componentWillUnmount() {...}</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<!-- SLIDE#7 -->
 	<section class="slide img_slide">
 		<h2 style="margin: 320px 0 0;">SEO friendly</h2>
 		<img src="pictures/computer-767776_1280.jpg" alt="" class="cover">
 	</section>
 
-	<!-- SLIDE#6 -->
+	<!-- SLIDE#8 -->
 	<section class="slide">
 		<h2>SEO friendly</h2>
 		<ul>
@@ -108,30 +138,35 @@
 		</ul>
 	</section>
 
-	<!-- SLIDE#7 -->
+	<!-- SLIDE#9 -->
 	<section class="slide img_slide">
 		<h2 style="margin: 320px 0 0;">FLUX</h2>
 		<img src="pictures/waterfall-77676_1280.jpg" alt="" class="cover">
 	</section>
 
-	<!-- SLIDE#8 -->
+	<!-- SLIDE#10 -->
+	<section class="slide img_slide">
+		<div style="margin: 450px 0 0;">source: https://facebook.github.io/flux/</div>
+		<img src="pictures/flux-simple-f8-diagram-explained-1300w.png" alt="" class="cover">
+	</section>
+
+	<!-- SLIDE#11 -->
 	<section class="slide">
 		<h2>FLUX</h2>
 		<ul>
 			<li class="next">One direction data flow</li>
-			<li class="next">Combining with React</li>
 			<li class="next">Bug tracing</li>
 			<li class="next">Optimizations ready</li>
 		</ul>
 	</section>
 
-	<!-- SLIDE#9 -->
+	<!-- SLIDE#12 -->
 	<section class="slide img_slide">
 		<h2 style="margin: 320px 0 0;">EFFICIENCY</h2>
 		<img src="pictures/light-1283795_1280.jpg" alt="" class="cover">
 	</section>
 
-	<!-- SLIDE#10 -->
+	<!-- SLIDE#13 -->
 	<section class="slide">
 		<h2>EFFICIENCY</h2>
 		<ul>
@@ -141,13 +176,13 @@
 		</ul>
 	</section>
 
-	<!-- SLIDE#11 -->
+	<!-- SLIDE#14 -->
 	<section class="slide img_slide">
 		<h2 style="margin: 320px 0 0;">COMMUNITY</h2>
 		<img src="pictures/lego-1044891_1280.jpg" alt="" class="cover">
 	</section>
 
-	<!-- SLIDE#12 -->
+	<!-- SLIDE#15 -->
 	<section class="slide">
 		<h2>COMMUNITY</h2>
 		<ul>
@@ -162,49 +197,57 @@
 		</ul>
 	</section>
 
-	<!-- SLIDE#13 -->
+	<!-- SLIDE#16 -->
 	<section class="slide img_slide">
 		<h2 style="margin: 320px 0 0;">WEB ONLY?</h2>
 		<img src="pictures/question-mark-2123967_1280.jpg" alt="" class="cover">
 	</section>
 
-	<!-- SLIDE#14 -->
-	<section class="slide">
-		<h2>WEB ONLY?</h2>
-		<ul>
-			<li class="next">React Native</li>
-			<li class="next">Building CLI UI with React?</li>
-      <ul class="next">
-				<li>react-blessed</li>
-				<li>react-blessed-contrib</li>
-			</ul>
-			<li class="next">and others projects using React design pattern</li>
-		</ul>
-	</section>
-
-	<!-- SLIDE#15 -->
-	<section class="slide img_slide">
-		<h2 style="margin: 320px 0 0;">DEBUGGING & ANALYSING</h2>
-		<img src="pictures/tool-384740_1280.jpg" alt="" class="cover">
-	</section>
-
-	<!-- SLIDE#16 -->
-	<section class="slide">
-		<h2>DEBUGGING & ANALYSING</h2>
-		<ul>
-			<li class="next">React devTools</li>
-			<li class="next">?react_perf</li>
-			<li class="next">Performance Tools</li>
-		</ul>
-	</section>
-
 	<!-- SLIDE#17 -->
+	<section class="slide">
+    <h2>React Native</h2>
+		<pre>
+			<code>class NativeComponent extends Component {</code>
+			<code>  render() {</code>
+			<code>    return &lt;View&gt;</code>
+			<code>      &lt;Text&gt;</code>
+			<code>        We can use native components 'View' and 'Text',</code>
+			<code>        like we did with html 'div' and 'span'.</code>
+			<code>      &lt;/Text&gt;</code>
+			<code>    &lt;/View&gt;)</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<!-- SLIDE#18 -->
+	<section class="slide">
+    <h2>React Blessed</h2>
+		<pre>
+			<code>class CLIComponent extends Component {</code>
+			<code>  render() {</code>
+			<code>    return &lt;element&gt;</code>
+			<code>      &lt;box&gt;</code>
+			<code>        We can use abstract CLI components,</code>
+			<code>        and use it html style.</code>
+			<code>      &lt;/box&gt;</code>
+			<code>    &lt;/element&gt;)</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<!-- SLIDE#19 -->
+	<section class="slide img_slide">
+		<div style="margin: 480px 0 0;">source: https://github.com/Yomguithereal/react-blessed</div>
+		<img src="pictures/react-blessed-demo.gif" alt="" class="cover">
+	</section>
+
+	<!-- SLIDE#20 -->
 	<section class="slide img_slide">
 		<h2 style="margin: 120px 0 0;">THANKS FOR LISTENING</h2>
 		<img src="pictures/cloud-600224_1280.jpg" alt="" class="cover">
 	</section>
 
-	<!-- SLIDE#18 -->
+	<!-- SLIDE#21 -->
 	<section class="slide">
 		<h2>RESOURCES</h2>
 		<ul>
